@@ -1,0 +1,14 @@
+<h1>SCORE</h1>
+<div class="container">
+  <div class="letters-set">
+    <% @letters.split(" ").each do |letter| %>
+    <div id="letter-box"><%= letter %></div>
+    <% end %>
+  </div>
+  <div class="word-essay">
+    <form action="/new" method="get">
+      <input type="button" class="btn" name="try" value="try-again!">
+    </form>
+  </div>
+</div>
+<h2><%= @comment %></h2>
